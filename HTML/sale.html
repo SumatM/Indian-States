@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autumn Winter 23</title>
+    <link rel="shortcut icon" href="/logo/Screenshot 2023-01-16 215124.png" type="image/x-icon">
+    <style>
+    *{
+    /* border: 1px solid red; */
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin: 0px;
+padding: 0px;
+}
+    
+    .nav{
+    top: 0;
+    position: fixed;
+    background-color: white;
+}
+.navtop {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: end;
+    font-size: 11px;
+    margin-top: 5px;
+}
+.navtop img{
+    width: 1%;
+}
+.navtop a {
+    margin-right: 30px;
+    margin-left: 5px;
+    color: gray;
+}
+.navtop a:hover {
+    text-decoration: underline;
+}
+.navtop span {
+    margin-left: 7px;
+}
+/* navitation bar button part  */
+
+.navButtom {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,70px);
+    font-size: 17px;
+    background-color: white;
+    position: sticky;
+}
+.nav #logo{
+    width: 50%;
+    padding-top: 10px;
+    margin-left: 40px;
+}
+.navButtom > div:nth-child(2){
+    /* border: 2px solid rgb(7, 10, 193); */
+    grid-area: 1/2/2/4;
+    display: flex;
+    align-items:center;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+.navButtom > div:nth-child(2) a {
+    margin-left: 25px;
+    color: rgb(89, 87, 87);
+}
+#nav-sale {
+    color: red;
+}
+#navbar .navButtom > div:nth-child(2) a:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 8px;
+}
+.navButtom > div:nth-child(3){
+    /* border: 2px solid rgb(19, 232, 197); */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+}
+.nav .navButtom  img {
+    width: 6%;
+}
+ .navButtom #search{
+    /* border: 1px solid rgb(42, 42, 38); */
+    width: 100px;
+    height: 23px;
+    display: block;
+    margin-right: 10px;
+}
+.notification{
+    background-color:rgb(196,11,11);
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.notification a {
+    background-color:rgb(196,11,11);
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="nav">
+            <div class="navtop">
+                <a href="#">E-Gift Card</a>
+                <a href="#">Store Locator</a>
+                <a href="#">Track Order</a>
+                <a href="#">My AEO</a>
+                <img src="https://cdn-icons-png.flaticon.com/512/60/60993.png" alt="">
+                <a href="#">Favorites</a>
+                <img src="https://cdn-icons-png.flaticon.com/512/8/8109.png" alt="">
+                <span id="cart_items">0</span>
+                <a href="./cart.html">Items</a>
+            </div>
+            <div id="navbar">
+                <div class="navButtom">
+                    <div>
+                       <a href="./index.html"> <img id="logo" src="/logo/logo-no-background.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="#">Men</a>
+                        <a href="#">Women</a>
+                        <a href="#">Jeans</a>
+                        <a id="nav-sale" href="#">Sale</a>
+                        <a href="#">Winter Wear</a>
+                    </div>
+                    <div>
+                        <input id="search" type="text" placeholder="Search">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png" alt="">
+                    </div>
+                </div>
+                <div class="notification">
+                    <p>End of Season Sale! 25-50% off on the Coolest Looks!</p>
+                    <a href="./sale.html">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+</body>
+</html>
