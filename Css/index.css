@@ -113,10 +113,38 @@ padding: 0px;
     margin-bottom: -10px;
     margin-top: -12px;
 }
+
+/* imaged for the card to show in home page  */
+
 #cards{
-height: 400px;
-background-color: aqua;
+padding-top: 50px;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+gap: 10px;
+text-align: center;
+font-size: 12px;
+color: gray;
+padding-top: 40px;
+text-overflow: ellipsis;
 }
+#cards > div{
+    padding: 10px;
+}
+#cards img {
+    width: 100%;
+    padding-bottom: 15px;
+    }
+
+ .red{
+    color: rgb(203, 24, 24);
+    font-weight: bold;
+}
+.underline{
+    text-decoration:line-through;
+    font-weight: 200;
+    color: black;
+}
+
 #themeimg{
 margin-top: 50px;
 
