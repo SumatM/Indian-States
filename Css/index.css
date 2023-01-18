@@ -1,0 +1,203 @@
+
+*{
+    /* border: 1px solid red; */
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin: 0px;
+padding: 0px;
+}
+.nav{
+    top: 0;
+    position: fixed;
+    background-color: white;
+}
+.navtop {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: end;
+    font-size: 11px;
+    margin-top: 5px;
+}
+.navtop img{
+    width: 1%;
+}
+.navtop a {
+    margin-right: 30px;
+    margin-left: 5px;
+    color: gray;
+}
+.navtop a:hover {
+    text-decoration: underline;
+}
+.navtop span {
+    margin-left: 7px;
+}
+/* navitation bar button part  */
+
+.navButtom {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,70px);
+    font-size: 17px;
+    background-color: white;
+    position: sticky;
+}
+.nav #logo{
+    width: 50%;
+    padding-top: 10px;
+    margin-left: 40px;
+}
+.navButtom > div:nth-child(2){
+    /* border: 2px solid rgb(7, 10, 193); */
+    grid-area: 1/2/2/4;
+    display: flex;
+    align-items:center;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+.navButtom > div:nth-child(2) a {
+    margin-left: 25px;
+    color: rgb(89, 87, 87);
+}
+#nav-sale {
+    color: red;
+}
+#navbar .navButtom > div:nth-child(2) a:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 8px;
+}
+.navButtom > div:nth-child(3){
+    /* border: 2px solid rgb(19, 232, 197); */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+}
+.nav .navButtom  img {
+    width: 6%;
+}
+ .navButtom #search{
+    /* border: 1px solid rgb(42, 42, 38); */
+    width: 100px;
+    height: 23px;
+    display: block;
+    margin-right: 10px;
+}
+
+.notification{
+    background-color:rgb(196,11,11);
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.notification a {
+    background-color:rgb(196,11,11);
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+}
+/* container used for display images */
+.container img{
+    width: 100%;
+    margin-bottom: -10px;
+    margin-top: -12px;
+}
+#cards{
+height: 400px;
+background-color: aqua;
+}
+#themeimg{
+margin-top: 50px;
+
+}
+/* button part of the homepage */
+#bottom{
+/* color: rgb(39, 38, 38); */
+/* width: 100%; */
+margin-left: 15px;
+font-family: 'Quicksand', sans-serif;;
+}
+#bottom img {
+width: 4%;
+margin-right: 10px;
+margin-left: 10px;
+margin-top: 5px;
+}
+#bottom> div a {
+display: block;
+font-size: 12px;
+margin-left: 9px;
+color: rgb(44, 43, 43);
+}
+#bottom> div a:hover {
+text-decoration: underline;
+}
+#bottom> div p:hover {
+text-decoration: underline;
+}
+#bottomTop{
+border-top: 1px solid black;
+display: flex;
+justify-content: center;
+margin-top: 50px;
+padding-top: 30px;
+}
+#bottomTop>div {
+border: 1px solid rgb(90, 77, 77);
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 5px 70px;
+margin-left: 70px;
+}
+#bottomMid   {
+/* border: 2px solid black; */
+display: grid;
+grid-template-columns: repeat(3,1fr);
+border-bottom: 1px solid gray;
+/* margin-bottom: 40px; */
+padding-bottom: 25px;
+
+}
+#bottomMid >div {
+/* border: 2px solid green; */
+margin-top: 20px;
+
+
+}
+#bottomMid >div  div{
+/* border: 2px solid rgb(230, 119, 17); */
+margin-top: 20px;
+
+}
+#bottomMid p {
+padding-left: 42px;
+font-size: 12px;
+}
+#bottomBottom{
+margin-top: 0px;
+font-size: 10px;
+margin-bottom: 40px;
+color: rgb(66, 64, 64);
+}
+#facebook  {
+/* border: 2px solid rebeccapurple; */
+margin-left: 14px;
+margin-bottom: 15px;
+}
+#facebook ~ img {
+margin-top: 15px;
+margin-left: 14px;
+}
