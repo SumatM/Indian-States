@@ -1,0 +1,97 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(212, 212, 212);
+}
+#backtopage{
+    /* background-color: red; */
+    text-align: right;
+}
+#backtopage img{
+    /* background-color: red; */
+    width: 15px;
+}
+
+
+#loginbox{
+    /* border: 2px solid red; */
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    bottom: 50%;
+    padding: 20px;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    background-color: white;
+}
+img{
+    width: 70%;
+}
+
+#loginboxtop{
+    line-height: 0px;
+    border-top: 3px solid black;
+
+}
+#loginboxtop h3{
+    font-weight: 100;
+    font-size: 30px;
+
+}
+#loginboxtop h4 {
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+#loginboxtop2{
+    padding-right: 20px;
+}
+#loginboxtop2 p{
+    color: rgb(87, 87, 87);
+}
+#inputtype{
+    padding: 10px 0px;
+    margin-top: 0px;
+}
+#inputtype input {
+    /* border: 2px solid red; */
+    margin-top: 15px;
+    height: 50px;
+    width: 92%;
+}
+:placeholder-shown{
+padding-left: 30px;
+}
+#inputtype button {
+    height: 55px;
+    width: 100%;
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+}
+
+#otherloginmethode{
+    width: 50%;
+}
+#otherloginmethode p {
+    font-size: 12px;
+    font-weight: 800;
+    
+}
+#otherloginmethode >div:nth-child(2)  {
+    display: flex; 
+    text-align: left;
+    border: 0.8px solid rgb(113, 113, 113);
+    width: 90%;
+    padding: 10px 0;
+    padding-left: 100px;
+
+}
+#otherloginmethode >div:nth-child(2) > div  {
+    width: 20%;
+}
+#otherloginmethode >div:nth-child(2) #google  {
+    color: rgb(88, 86, 86);
+    
+}

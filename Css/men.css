@@ -146,6 +146,25 @@
             color: red;
             font-weight: 200;
         }
+        .dropdown-content img:hover{
+            animation: rotate 6s infinite;
+        }
+
+        .plussign:hover{
+            animation: rotate 6s infinite;
+        }
+
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(90deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
 
  /*----------------- containerPart2 ----------------*/
 
