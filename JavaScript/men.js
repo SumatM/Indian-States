@@ -4,9 +4,8 @@ let api = ("/json/men.json")
    async function fetchdata(){
     try{
         let request = await fetch(api);
-    // console.log(request)
     let data =  await request.json();
-    console.log(data);
+    // console.log(data);
     appData[0]=data;
     display(data);
     }
@@ -20,13 +19,29 @@ let api = ("/json/men.json")
 
 
   let divDisplay = document.getElementById("displayData")
+  let datappend = document.getElementById("showdata");
   function display(data) {
-    // divDisplay.textContent = null;
+    divDisplay.innerHTML = null;
+    datappend.innerHTML = null;
     data.forEach((ele,ind) =>{
     let card = document.createElement("div");
+    card.setAttribute("class","card")
     let img = document.createElement("img");
-    img.class = "change";
+    img.setAttribute("class","change")
     img.src = ele.img;
+    addtocart = document.createElement("img")
+    addtocart.src = "https://images.emojiterra.com/google/android-10/512px/2795.png"
+    addtocart.setAttribute("class","plussign")
+     // add to card function 
+     let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      addtocart.addEventListener("click",()=>{
+        cartorder = data.filter((e,i)=>{
+          return i==ind
+        })
+        cart.push(cartorder[0])
+        localStorage.setItem("cart",JSON.stringify(cart))
+        console.log(cart)
+    })
     img.addEventListener("mouseover",()=>{
       img.src = ele.bimg
     })
@@ -45,8 +60,13 @@ let api = ("/json/men.json")
     discount.textContent=  "₹ "+ele.discount;
     pricediv.append(price,discount)
     discount.setAttribute("class","red")
-    card.append(img,name,pricediv);
-    divDisplay.append(card);
+    card.append(img,addtocart ,name,pricediv);
+    if(ind<3) {
+      divDisplay.append(card);
+    } else {
+      datappend.append(card);
+    }
+    
     })
     let tot  = document.getElementById("totalitems")
     tot.textContent = data.length;
@@ -56,12 +76,28 @@ let api = ("/json/men.json")
   // console.log(appData)
   filter.addEventListener("change",()=>{
     console.log(filter.value)
-    if(filter.value=="LTH") {
-       let lowest = appData.sort(function (a,b){
-        return b-a
-       })
-        console.log(lowest)
-        display(lowest);
+    if(filter.value=="discount") {
+      let discountItems = appData[0].filter((ele)=> {
+        let value =  (ele.price-ele.discount)
+         discount =   (ele.price-value)/100
+          if(discount.toFixed()>=24) {
+            // console.log(discount)
+            return ele;
+          }
+      })
+      display(discountItems)
+    }else if(filter.value=='LTH') {
+      let lowest = appData[0].sort(function(a,b){
+        return a.discount-b.discount
+      })
+      // console.log(lowest)
+      display(lowest);
+    }else if(filter.value=='higest') {
+      let lowest = appData[0].sort(function(a,b){
+        return b.discount-a.discount
+      })
+      console.log(lowest)
+      display(lowest);
     }
     
   })

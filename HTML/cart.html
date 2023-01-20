@@ -6,46 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Summary</title>
     <link rel="shortcut icon" href="/logo/Screenshot 2023-01-16 215124.png" type="image/x-icon">
-    <style>
-        body{
-            padding: 0;
-            margin: 0;
-        }
-        *{
-            font-family: 'Quicksand', sans-serif;
-        }
-        nav{
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
-            position: fixed;
-            }
-        nav > div {
-            /* border: 2px solid rgb(113, 255, 5);   */
-            display: flex;
-            justify-content: space-between;
-            padding-top: 10px;
-            padding-bottom: 15px;
-        }
-        #navbox{
-            /* border: 2px solid green; */
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            font-size: 12px;
-            padding-right: 55px;
-        }
-        nav img{
-        width: 20%;
-        padding-top: 10px;
-        margin-left: 40px;
-        }
-        #navbox img {
-            width: 5%;
-            height: 40%;
-            padding-right: 5px;
-            padding-bottom: 12px;
-
-        }
-    </style>
+    <link rel="stylesheet" href="/Css/cart.css">
+       
 </head>
 <body>
     <div>
@@ -59,6 +21,155 @@
                 </div>
             </div>
         </nav>
+        <div id="container">
+  <!---------------------- box 1 ------------------>
+            <div id="box1">
+  <!---------------------- box 1 part1------------------>
+
+   <!---------------------- box 1 cart info------------------>
+                <div id="box1top">
+                    <div>
+                        <div>
+                            <h4>1. YOUR cart <span id="noOfItems">0</span>Item(S)</h4>
+                        </div>
+                        <div>
+                            <h5><a href="/HTML/cart.html">Edit</a></h5>
+                        </div>
+                    </div>
+                    <div class="boldLine">
+                        <div>
+                            <span>Total:</span>
+                            <span class="rupeedark">₹</span>
+                             <span class="totalValue">0</span>
+                        </div>
+                    </div>
+                </div>
+ <!--------------- box 1 part2 shipping & address------------>
+
+                <div id="displayCartInfo">
+                        
+                    <div>
+                        <div>
+                            <h4>2. SHIPPING DETAILS </h4>
+                        </div>
+                        <div>
+                            <h5><a href="/HTML/cart.html">Edit</a></h5>
+                        </div>
+                    </div>
+                    <div>
+                    <a href="/HTML/cart.html">ADD NEW SHIPPING ADDRESS</a>
+                    </div>
+            </div>
+ <!---------------------- box 1 part2 shipping ------------------>
+                    <div id="paymentinfo">
+                        <div>
+                            <div>
+                                <h4>3. PAYMENT OPTION</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <p>SELECT YOUR PAYMENT MODE</p>
+                        </div>
+                        <div id="paymentbox">
+                            <div id="paymentright">
+                                    <div>
+                                        <h5> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDKrOdSzeS-AFLVjWpfGmgTZUV1tDU2tI0YQ&usqp=CAU" alt=""> UPI</h5>
+                                    </div>
+                                    <div>
+                                        <h5>
+                                            <img id="card"  src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/rupay-logo-icon.png" alt=""> Credit/Debit Cards
+                                        </h5>
+                                    </div>
+                            </div>
+                            <div id="paymentleft">
+                                <div>
+                                    <span>UPI</span>
+                                </div>
+                                <div>
+                                    <div>
+                                        Scan & OR to pay 
+                                        <p>Scan QR code using Paytm or your preferred UPI app</p>
+                                    </div>
+                                    <div>
+                                        <img id="upi" src="/icons/UPI QR.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6>Pay using UPI ID</h6>
+                                    <form action="">
+                                        <input type="text" name="" id="UPIid" placeholder="Enter Your UPI ID here"> <br>
+                                        <button>Pay Securely</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+  <!----------------------- box2 ---------------->
+            <div id="box2">
+                <div id="box2top">
+                        <div>
+                        <img src="/icons/discount.png" alt=""></div>
+                        <div>
+                            <a href="/HTML/cart.html"> Apply coupon toget the best prices </a>
+                        </div>
+                        <div>
+                            <img src="/icons/right arrow.png" alt="">
+                        </div>
+                    
+                </div>
+                <div id="orderdetails">
+                    <div> <H2>Order Summary</H2></div>
+        <!----------- orderValue--------- -->
+                    <div>
+                        <span>Order Value</span>
+                        <div>
+                            <span class="rupeedark">₹</span>
+                             <span id="orderValue">0</span>
+                        </div>
+                    </div>
+         <!------------------ -- product Discounts --------------------->
+                    <div>
+                        <span>Product Discounts</span>
+                        <div>
+                            <span class="rupeedark">₹</span>
+                             <span id="orderDiscount">0</span>
+                        </div>
+                    </div>
+                    <!------------------ -- shipping  --------------------->
+                    <div>
+                        <span>Shipping</span>
+                        <div>
+                            <span id="shipping">Free</span>
+                        </div>
+                    </div>
+                      <!------------------ -- Total  --------------------->
+                      <div>
+                        <h3>TOTAL</h3>
+                        <div>
+                            <span class="rupeedark">₹</span>
+                             <span class="totalValue rupeedark">0</span>
+                        </div>
+                      </div>
+                    <!------------------ -- Massage  --------------------->
+                    <div id="massage">
+                            Shop now to avail maxmim saving.
+                    </div>
+                    <div>
+                        <img src="/icons/shield.png" alt="">
+                        <p>Safe and Secure Payments. <br>
+                            Easy returns. 100% Authentic products</p>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </body>
+<script src="/JavaScript/cart.js"></script>
 </html>
