@@ -87,6 +87,9 @@
             display: block;
             margin-right: 10px;
         }
+        #cart{
+            padding: 2px;
+        }
 
         .notification{
             background-color:rgb(196,11,11);
@@ -310,6 +313,10 @@
             width: 105%;
             height: 500px;
             margin-left: 100px;
+        }
+        #sortby{
+            font-size: 12px;
+            font-weight: bold;
         }
 
 /*----------------- bottum part ------------ */

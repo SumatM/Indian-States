@@ -18,15 +18,19 @@
             number:number,
             password:password,
          }
-         userKey.push("sr4d34")
+         userKey[0]=("sr4d34")
          userdata.push(obj);
          localStorage.setItem("userData",JSON.stringify(userdata))
          localStorage.setItem("userKey",JSON.stringify(userKey))
-         window.location.href = "/HTML/index.html";
+         window.location.href = "/HTML/login.html";
         }else {
         let show = document.querySelector("#loginboxtop2>p");
         show.style.color="red"
         show.innerText ="Please Enter Password Of Minimum 8 Character"
         }
-    }
+      }else{
+         let show = document.querySelector("#loginboxtop2>p");
+        show.style.color="red"
+        show.innerText ="Please Enter Your Name, Mobile No. & Password";
+      }
  })

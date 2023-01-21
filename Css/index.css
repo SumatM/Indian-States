@@ -87,6 +87,9 @@ padding: 0px;
     display: block;
     margin-right: 10px;
 }
+#cart{
+    padding: 2px;
+}
 
 .notification{
     background-color:rgb(196,11,11);

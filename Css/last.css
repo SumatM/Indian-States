@@ -1,0 +1,32 @@
+*{
+    /* border: 1px solid rgb(8, 8, 8); */
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+body{
+    background-color: rgb(211, 211, 211);
+}
+#displaybox{
+    width: 40%;
+    margin: auto;
+    background-color: rgb(234, 234, 234);
+    height: 350px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+img{
+    width: 40%;
+}
+#displaybox h3{
+    color: green;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 20px;
+}
+#displaybox h2{
+    font-weight: 900;
+    font-size: 25px;
+    
+}
