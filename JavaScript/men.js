@@ -19,6 +19,10 @@ let api = ("/json/men.json")
        // add to card function 
    let cart = JSON.parse(localStorage.getItem("cart")) || [];
    let mostview = JSON.parse(localStorage.getItem("popular")) || [];
+   let userKey = JSON.parse(localStorage.getItem("userKey")) || [];
+   let userdata = JSON.parse(localStorage.getItem("userData")) || [];
+   let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+   
    let popular = 0; 
 
   let divDisplay = document.getElementById("displayData")
@@ -30,19 +34,59 @@ let api = ("/json/men.json")
     let card = document.createElement("div");
     card.setAttribute("class","card")
     let img = document.createElement("img");
-    img.setAttribute("class","change")
     img.src = ele.img;
+    img.setAttribute("class","change")
     addtocart = document.createElement("img")
     addtocart.src = "https://images.emojiterra.com/google/android-10/512px/2795.png"
     addtocart.setAttribute("class","plussign")
 
-      addtocart.addEventListener("click",()=>{
-        cartorder = data.filter((e,i)=>{
-          return i==ind
-        })
-        cart.push(cartorder[0])
-        localStorage.setItem("cart",JSON.stringify(cart))
-        console.log(cart)
+    addtocart.addEventListener("click",()=>{
+      // cartorder = data.filter((e,i)=>{
+      //   return i==ind
+      // })
+      let datashow = document.getElementById("siginornot");
+      
+      if(userKey[0] == "sr4d34") {
+        // is user is logined in or not
+        if(check(ele) ){
+          alert("Item Is Already Present In Cart")
+        }else{
+         cart.push({...ele,number:1})
+       localStorage.setItem("cart",JSON.stringify(cart))
+        }
+      } else{
+           // show error in nofify
+    datashow.innerText = "Login First";
+    datashow.style.color = "white"
+    datashow.setAttribute("href","/HTML/login.html")
+    datashow.style.backgroundColor = "red"
+    datashow.style.padding = "5px"
+      datashow.style.fontWeight="700"
+      }
+  
+         datashow = document.getElementById("siginornot");
+        
+if(userKey[0] == "sr4d34") {
+ span = document.createElement("a");
+    datashow.style.color = "black"
+    datashow.style.fontWeight="600"
+    datashow.setAttribute("href","#")
+    datashow.innerText=userdata[0].name;
+    span = datashow;
+
+//to change the data when every time i added to cart 
+    let totalitems = document.getElementById("cart_items")
+    let items = document.getElementById("cart");
+cartData = JSON.parse(localStorage.getItem("cart")) || [];
+console.log(cartData)
+  if(cartData!==""){
+    items.style.backgroundColor = "black";
+    items.style.color = "white";
+   items.innerHTML = "Checkout";
+   totalitems.innerText = cartData.length;
+  }
+}
+
     })
     img.addEventListener("click",()=>{
       popular++;
@@ -55,6 +99,7 @@ let api = ("/json/men.json")
       localStorage.setItem("popular",JSON.stringify(mostview))
       // console.log(popularData);
     })
+    // logout function 
     img.addEventListener("mouseover",()=>{
       img.src = ele.bimg
     })
@@ -83,6 +128,7 @@ let api = ("/json/men.json")
     })
     let tot  = document.getElementById("totalitems")
     tot.textContent = data.length;
+    
   }
 
   let filter = document.getElementById("filter");
@@ -127,6 +173,14 @@ let api = ("/json/men.json")
       }
      
    }else if(filter.value=="mostviewed"){
+    if(mostview[0]===undefined) {
+      let img = document.createElement("img")
+      img.src="https://www.freeiconspng.com/thumbs/error-icon/round-error-icon-16.jpg"
+      datappend.innerHTML = null;
+       divDisplay.innerHTML = null;
+       divDisplay.textContent = "Sorry! May be you are the 1st user" 
+       divDisplay.append(img)
+  } else { 
     let arr = []
   let view = appData[0].filter((ele,ind)=>{
       for (let i=0; i<mostview.length; i++) {
@@ -159,6 +213,55 @@ let api = ("/json/men.json")
       {return b.popular-a.popular})
           console.log(array)
           display(array)
-      } 
+         
+      }
+        } 
   })
+
+
+let datashow = document.getElementById("siginornot");
+if(userKey[0] == "sr4d34") {
+ span = document.createElement("a");
+    datashow.style.color = "black"
+    datashow.style.fontWeight="600"
+    datashow.setAttribute("href","#")
+    datashow.innerText=userdata[0].name;
+    span = datashow;
+
+    datashow.addEventListener("mouseover",()=>{
+      datashow.innerText = "SignOut"
+    })
+    datashow.addEventListener("click",()=>{
+      userKey[0]="qerfeudf"
+      localStorage.setItem("userKey",JSON.stringify(userKey))
+      window.location.href = "/HTML/login.html";
+    })
+    datashow.addEventListener("mouseleave", ()=>{
+      datashow.innerText=userdata[0].name;
+      // console.log("Hello")
+    })
+
+
+//cart name change 
+    let totalitems = document.getElementById("cart_items")
+    let items = document.getElementById("cart");
+cartData = JSON.parse(localStorage.getItem("cart")) || [];
+console.log(cartData)
+  if(cartData[0]!==undefined){
+    items.style.backgroundColor = "black";
+    items.style.color = "white";
+   items.innerHTML = "Checkout";
+   totalitems.innerText = cartData.length;
+  }
+}
+
+
+function check(ele) {
+  for (let i=0; i<cartData.length; i++) {
+    if(ele.id==cartData[i].id){
+      return true;
+    }
+  } return false;
+}
+
 

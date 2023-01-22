@@ -87,6 +87,9 @@ padding: 0px;
     display: block;
     margin-right: 10px;
 }
+#cart{
+    padding: 2px;
+}
 
 .notification{
     background-color:rgb(196,11,11);
@@ -115,6 +118,10 @@ padding: 0px;
 }
 
 /* imaged for the card to show in home page  */
+#cardhead{
+    text-align: center;
+    padding-top: 35px;
+}
 
 #cards{
 padding-top: 50px;

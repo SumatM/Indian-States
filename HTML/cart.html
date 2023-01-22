@@ -24,8 +24,17 @@
                 </div>
             </div>
         </nav>
-        <div id="container">
+        <div id="emptycart">
+            <div>
+                <h1 id="emptycartnotification">No Products in cart</h1>
+            </div>
+            <div id="addtocartbuttondiv">
+                <a id="addtocartbutton" href="/HTML/sale.html">ADD PRODUCTS TO YOUR CART</a>
+            </div>
+        </div>
+        
   <!---------------------- box 1 ------------------>
+        <div id="container">
             <div id="box1">
   <!---------------------- box 1 part1------------------>
 
@@ -43,8 +52,11 @@
                         <div>
                             <span>Total:</span>
                             <span class="rupeedark">₹</span>
-                             <span class="totalValue">0</span>
+                             <span id="totalValue">0</span>
                         </div>
+                    </div>
+                    <div id="cartitemshow">
+
                     </div>
                 </div>
  <!--------------- box 1 part2 shipping & address------------>
@@ -98,11 +110,11 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <h6>Pay using UPI ID</h6>
+                                    <h6 id="error">Pay using UPI ID</h6>
                                     <form action="">
                                         <input type="text" name="" id="UPIid" placeholder="Enter Your UPI ID here"> <br>
-                                        <button>Pay Securely</button>
                                     </form>
+                                    <button id="upibutton">Pay Securely</button>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +164,7 @@
                         <h3>TOTAL</h3>
                         <div>
                             <span class="rupeedark">₹</span>
-                             <span class="totalValue rupeedark">0</span>
+                             <span id="total">0</span>
                         </div>
                       </div>
                     <!------------------ -- Massage  --------------------->
@@ -171,7 +183,6 @@
             </div>
 
         </div>
-
     </div>
 </body>
 <script src="/JavaScript/cart.js"></script>

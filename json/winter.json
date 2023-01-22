@@ -1,0 +1,186 @@
+[
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/789357-9430335.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/789357-9430336.jpg?w=291&auto=format",
+    "name": "American Eagle Men Blue Denim Trucker Jacket",
+    "price": 5999,
+    "discount": 4199,
+    "id": 1
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/787958-9196546.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/787958-9196547.jpg?w=291&auto=format",
+    "name": "American Eagle Women Olive Lightweight Military Shacket",
+    "price": 7999,
+    "discount": 3999,
+    "id": 2
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/787911-9430302.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/787911-9430303.jpg?w=291&auto=format",
+    "name": "American Eagle Men Brown Workwear Shacket",
+    "price": 7999,
+    "discount": 5599,
+    "id": 3
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/781826-9198878.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/781826-9198879.jpg?w=291&auto=format",
+    "name": "American Eagle Men Pink FIFA World Cup Crew Neck Sweatshirt",
+    "price": 4599,
+    "discount": 2299,
+    "id": 4
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/778977-9586777.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/778977-9586778.jpg?w=291&auto=format",
+    "name": "American Eagle Men Green Graphic Zip-Up Hoodie",
+    "price": 3699,
+    "discount": 2589,
+    "id": 5
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/778974-9505071.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/778974-9505072.jpg?w=291&auto=format",
+    "name": "American Eagle Men Beige Graphic Zip-Up Hoodie",
+    "price": 3699,
+    "discount": 2589,
+    "id": 6
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/778945-9522680.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/778945-9522681.jpg?w=291&auto=format",
+    "name": "American Eagle Men Brown Workwear Jacket",
+    "price": 8999,
+    "discount": 6299,
+    "id": 7
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/778942-9430280.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/778942-9430281.jpg?w=291&auto=format",
+    "name": "American Eagle Women Red 90s Boyfriend Oversized Corduroy Jacket",
+    "price": 5999,
+    "discount": 2999,
+    "id": 8
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/778933-9593304.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/778933-9593305.jpg?w=291&auto=format",
+    "name": "American Eagle Women Brown 90s Boyfriend Oversized Corduroy Jacket",
+    "price": 5999,
+    "discount": 2999,
+    "id": 9
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/778930-9504621.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/778930-9504622.jpg?w=291&auto=format",
+    "name": "American Eagle Women Blue Oversized Waffle Knit Sweater",
+    "price": 3499,
+    "discount": 1749,
+    "id": 10
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/776583-9430786.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/776583-9430787.jpg?w=291&auto=format",
+    "name": "American Eagle Women Blue Snoopy Mock Neck Sweater",
+    "price": 3499,
+    "discount": 1749,
+    "id": 11
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/776573-9586557.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/776573-9586558.jpg?w=291&auto=format",
+    "name": "American Eagle Men Blue Super Soft Patterned Sweater Hoodie",
+    "price": 4599,
+    "discount": 2759,
+    "id": 12
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/776569-9504774.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/776569-9504775.jpg?w=291&auto=format",
+    "name": "American Eagle Men White Super Soft Patterned Sweater Hoodie",
+    "price": 4599,
+    "discount": 2759,
+    "id": 13
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/776453-9586546.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/776453-9586547.jpg?w=291&auto=format",
+    "name": "American Eagle Men Burgundy Super Soft Striped Crew Neck Sweater",
+    "price": 3999,
+    "discount": 2399,
+    "id": 14
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/776439-8966666.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/776439-8966667.jpg?w=291&auto=format",
+    "name": "American Eagle Men Black Super Soft Striped Crew Neck Sweater",
+    "price": 3999,
+    "discount": 2399,
+    "id": 15
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/774702-9199110.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/774702-9199111.jpg?w=291&auto=format",
+    "name": "American Eagle Men Grey Super Soft Fairisle Crew Neck Sweater",
+    "price": 4599,
+    "discount": 2759,
+    "id": 16
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/774677-9199484.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/774677-9199485.jpg?w=291&auto=format",
+    "name": "American Eagle Men Blue Super Soft Cable Knit Crew Neck Sweater",
+    "price": 3599,
+    "discount": 2159,
+    "id": 17
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/774667-9199011.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/774667-9199012.jpg?w=291&auto=format",
+    "name": "American Eagle Men White Super Soft Cable Knit Crew Neck Sweater",
+    "price": 3599,
+    "discount": 2159,
+    "id": 18
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/774599-9199000.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/774599-9199001.jpg?w=291&auto=format",
+    "name": "American Eagle Men Red Crew Neck Icon Sweater",
+    "price": 2499,
+    "discount": 1499,
+    "id": 19
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/774593-9379159.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/774593-9379160.jpg?w=291&auto=format",
+    "name": "American Eagle Men Navy CREW NECK ICON SWEATER",
+    "price": 2499,
+    "discount": 1499,
+    "id": 20
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/774590-9198989.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/774590-9198990.jpg?w=291&auto=format",
+    "name": "American Eagle Men Black Crew Neck Icon Sweater",
+    "price": 2499,
+    "discount": 1499,
+    "id": 21
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/774222-8915971.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/774222-8915972.jpg?w=291&auto=format",
+    "name": "American Eagle Women Red Boxy Striped Sweater",
+    "price": 3999,
+    "discount": 1999,
+    "id": 22
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/774213-9586788.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/774213-9586789.jpg?w=291&auto=format",
+    "name": "American Eagle Women Blue Boxy Striped Sweater",
+    "price": 3999,
+    "discount": 1999,
+    "id": 23
+  }
+]

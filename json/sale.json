@@ -1,0 +1,226 @@
+[
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/8/801736-9474482.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/8/801736-9474483.jpg?w=291&auto=format",
+    "name": "American Eagle Men Beige Cozy Cabin Flannel",
+    "price": 3299,
+    "discount": 2474,
+    "id": 1
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/793139-9378620.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/793139-9378621.jpg?w=291&auto=format",
+    "name": "American Eagle Men Navy Colorblock T-Shirt",
+    "price": 1799,
+    "discount": 1259,
+    "id": 2
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/793138-9378609.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/793138-9378610.jpg?w=291&auto=format",
+    "name": "American Eagle Men Grey Colorblock T-Shirt",
+    "price": 1799,
+    "discount": 1259,
+    "id": 3
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/793137-9378598.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/793137-9378599.jpg?w=291&auto=format",
+    "name": "American Eagle Men White Colorblock T-Shirt",
+    "price": 1799,
+    "discount": 1259,
+    "id": 4
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/793136-9378576.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/793136-9378577.jpg?w=291&auto=format",
+    "name": "American Eagle Men White Super Soft Hooded Flannel Shirt",
+    "price": 3299,
+    "discount": 2309,
+    "id": 5
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/793133-9378565.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/793133-9378566.jpg?w=291&auto=format",
+    "name": "American Eagle Men Blue Super Soft Hooded Flannel Shirt",
+    "price": 3299,
+    "discount": 2309,
+    "id": 6
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/793131-9307404.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/793131-9307405.jpg?w=291&auto=format",
+    "name": "American Eagle Men Burgundy Cozy Cabin Flannel",
+    "price": 3299,
+    "discount": 2474,
+    "id": 7
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/793130-9307393.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/793130-9307394.jpg?w=291&auto=format",
+    "name": "American Eagle Men Grey Slim Fit Solid Oxford Button-Up Shirt",
+    "price": 2599,
+    "discount": 1949,
+    "id": 8
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/793129-9307272.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/793129-9307273.jpg?w=291&auto=format",
+    "name": "American Eagle Men Blue Slim Fit Solid Oxford Button Down Shirt",
+    "price": 2299,
+    "discount": 1724,
+    "id": 9
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/793128-9300568.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/793128-9300569.jpg?w=291&auto=format",
+    "name": "American Eagle Men Khaki Slim Fit Solid Oxford Button-Up Shirt",
+    "price": 2299,
+    "discount": 1724,
+    "id": 10
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/789357-9430335.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/789357-9430336.jpg?w=291&auto=format",
+    "name": "American Eagle Men Blue Denim Trucker Jacket",
+    "price": 5999,
+    "discount": 4199,
+    "id": 11
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/787958-9196546.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/787958-9196547.jpg?w=291&auto=format",
+    "name": "American Eagle Women Olive Lightweight Military Shacket",
+    "price": 7999,
+    "discount": 3999,
+    "id": 12
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/787911-9430302.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/787911-9430303.jpg?w=291&auto=format",
+    "name": "American Eagle Men Brown Workwear Shacket",
+    "price": 7999,
+    "discount": 5599,
+    "id": 13
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/782089-9062926.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/782089-9062927.jpg?w=291&auto=format",
+    "name": "American Eagle Women Black Silk Button-Up Blouse",
+    "price": 2799,
+    "discount": 1959,
+    "id": 14
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/782076-9309479.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/782076-9309480.jpg?w=291&auto=format",
+    "name": "American Eagle Women Green Perforated Leather Belt",
+    "price": 1999,
+    "discount": 1399,
+    "id": 15
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/781826-9198878.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/781826-9198879.jpg?w=291&auto=format",
+    "name": "American Eagle Men Pink FIFA World Cup Crew Neck Sweatshirt",
+    "price": 4599,
+    "discount": 2299,
+    "id": 16
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/779986-9586667.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/779986-9586668.jpg?w=291&auto=format",
+    "name": "American Eagle Men White Super Soft Hooded Flannel Shirt",
+    "price": 3499,
+    "discount": 2624,
+    "id": 17
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/779985-9430555.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/779985-9430556.jpg?w=291&auto=format",
+    "name": "American Eagle Men Blue Super Soft Hooded Flannel Shirt",
+    "price": 3499,
+    "discount": 2624,
+    "id": 18
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/779984-9586656.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/779984-9586657.jpg?w=291&auto=format",
+    "name": "American Eagle Men Blue Super Soft Hooded Flannel Shirt",
+    "price": 3499,
+    "discount": 2624,
+    "id": 19
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/779983-9430544.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/779983-9430545.jpg?w=291&auto=format",
+    "name": "American Eagle Men Red Super Soft Hooded Flannel Shirt",
+    "price": 3499,
+    "discount": 2624,
+    "id": 20
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/779982-9586645.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/779982-9586646.jpg?w=291&auto=format",
+    "name": "American Eagle Men Multi-colored Super Soft Mixed Print Flannel Shirt",
+    "price": 3299,
+    "discount": 2474,
+    "id": 21
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/779981-9430533.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/779981-9430534.jpg?w=291&auto=format",
+    "name": "American Eagle Men Blue Super Soft Flannel Shirt",
+    "price": 3299,
+    "discount": 2474,
+    "id": 22
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/779979-9034306.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/779979-9034307.jpg?w=291&auto=format",
+    "name": "American Eagle Men Red Super Soft Flannel Shirt",
+    "price": 3299,
+    "discount": 2474,
+    "id": 23
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/779978-9586634.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/779978-9586635.jpg?w=291&auto=format",
+    "name": "American Eagle Men Pink Super Soft Flannel Shirt",
+    "price": 3299,
+    "discount": 2474,
+    "id": 24
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/783759-9600048.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/783759-9600049.jpg?w=291&auto=format",
+    "name": "American Eagle Women Olive Floral Ruffle Collar Shirt Dress",
+    "price": 4599,
+    "discount": 2999,
+    "id": 25
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/782107-9525385.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/774704-9268486.jpg?w=291&auto=format",
+    "name": "American Eagle Women Olive V-Neck Button-Up Blouse",
+    "price": 2799,
+    "discount": 1749,
+    "id": 26
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/782092-9600158.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/775788-8957067.jpg?w=291&auto=format",
+    "name": "American Eagle Women Green Silky Button-Up Blouse",
+    "price": 2799,
+    "discount": 1399,
+    "id": 27
+  },
+  {
+    "img": "https://imagescdn.aeo.in/img/app/product/7/782089-9062926.jpg?w=291&auto=format",
+    "bimg": "https://imagescdn.aeo.in/img/app/product/7/782089-9062927.jpg?w=291&auto=format",
+    "name": "American Eagle Women Black Silk Button-Up Blouse",
+    "price": 2799,
+    "discount": 1749,
+    "id": 28
+  }
+]
