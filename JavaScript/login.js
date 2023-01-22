@@ -58,3 +58,8 @@ let password = document.getElementById("password").value;
     },1000)
     }
 })
+
+let redirectbutton = document.getElementById("redirect")
+redirectbutton.addEventListener("click",()=>{
+  window.location.href = "/HTML/signup.html"
+})

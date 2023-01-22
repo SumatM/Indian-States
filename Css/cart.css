@@ -362,3 +362,9 @@
         padding: 20px 0;
         margin-left: 400px;
     }
+
+    #shippingbutton{
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }

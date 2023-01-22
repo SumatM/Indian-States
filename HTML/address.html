@@ -1,3 +1,64 @@
-<div class="alert alert-primary" role="alert">
-    This is a primary alert—check it out!
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian States: Add Address</title>
+  <link rel="shortcut icon" href="/logo/Screenshot 2023-01-16 215124.png" type="image/x-icon">
+<link rel="stylesheet" href="/Css/address.css">
+</head>
+
+<body>
+    <div id="container">
+      <div id="boxtop">
+         <div id="addshiping">
+          <h4>ADD SHIPPING ADDRESS</h4>
+        </div>
+        <img src="/icons/cross.png" alt="">
+         <div id="bordertop">
+         <!-- black topborder -->
+         </div>
+      </div>
+      <div>
+        <form action="">
+          <div id="formtop">
+            <input type="number" id="pincode" placeholder="Enter Pincode*">
+            <div>Check</div>
+          </div>
+          <div>
+            <input type="text" id="name" placeholder="First Name*">
+            <input type="text" id="lastname" placeholder="Last Name">
+          </div>
+          <div>
+            <input type="number" id="number" placeholder="Mobile Number*">
+          </div>
+          <div>
+            <input type="text" id="address1" placeholder="Address Line 1 *">
+          </div>
+          <div id="addressline">
+            <label for="">Add Address line + </label> <br>
+            <input type="text" name="" id="landmark" placeholder="Land Mark">
+          <div>
+          </div>
+            <input type="text" placeholder="City*" id="city">
+            <input type="text" id="state" placeholder="State*">
+          </div>
+          <div id="checkbox">
+            <input type="checkbox" id="checkbox">
+            <span>Make this my default address</span>
+          </div>
+          <div id="addrestype">
+            <span>Save As</span>
+            <span>Home</span>
+            <span>Office</span>
+            <span>Other</span>
+          </div>
+          
+          <button>SAVE ADDRESS</button>
+        </form>
+      </div>
+    </div>
+</body>
+<script src="/JavaScript/address.js"></script>
+</html>

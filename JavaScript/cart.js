@@ -14,10 +14,6 @@ if(userKey[0] == "sr4d34") {
   }else { 
     emptycart.innerHTML = null;
 
-
-
-
-
  let cartitemshow = document.getElementById("cartitemshow")
 
  function append(data){
@@ -140,6 +136,28 @@ Totalvalue.innerText = totaldiscount;
 
 
 
+let address = JSON.parse(localStorage.getItem("address")) || [];
+shippingaddress =document.getElementById("shippingaddressappend")
+if(address[0].verify=="adfjd"){
+            // console.log(address,"he")
+            shippingaddress.innerHTML=null;
+    address.forEach((ele,ind)=>{
+        let name = document.createElement("h4");
+        name.textContent = ele.name +" "+ ele.lastname;
+        let address1 = document.createElement("p"); 
+        address1.textContent = ele.address1 +"," + ele.landmark +","+ele.pincode;
+        let mobile = document.createElement("p");
+        mobile.textContent = "Mobile: "+ ele.number;
+        mobile.setAttribute("id","mobile")
+        let text = document.createElement("p");
+            text.textContent = "Estimated delivery within 3 days"
+            text.setAttribute("id","shippingtext")
+        let button = document.createElement("button");
+           button.innerText = "Add or Change";
+           button.setAttribute("id","shippingbutton")
+           shippingaddress.append(name,address1,mobile,text,button)
+    })
+}
 
 
   

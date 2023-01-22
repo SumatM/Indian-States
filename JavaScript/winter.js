@@ -68,6 +68,18 @@ addtocart.setAttribute("class","plussign")
       datashow.style.fontWeight="700"
       }
 
+      setTimeout(function(){
+        console.log("Hello")
+        
+        datashow.innerText = "My AEO";
+        datashow.style.color = "gray"
+        datashow.setAttribute("href","/HTML/login.html")
+        datashow.style.backgroundColor = "white"
+        datashow.style.padding = "0px"
+          datashow.style.fontWeight="300"
+          datashow.style.fontSize = "11px"
+      },2000)
+
            
 if(userKey[0] == "sr4d34") {
   span = document.createElement("a");
