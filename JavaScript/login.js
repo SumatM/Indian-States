@@ -11,39 +11,41 @@ button.addEventListener("click",(e) => {
    let number = document.getElementById("number").value
 let password = document.getElementById("password").value;
     if(number!=="" && password!=="") {
-        verification = userdata.filter((ele,ind)=>{
-        if(number==ele.number){
-            // console.log("num")
-            if(password==ele.password){
-                // console.log("done")
-                //intervel
-                userKey[0]=("sr4d34")
-                localStorage.setItem("userKey",JSON.stringify(userKey))
-                let show = document.querySelector("#loginboxtop2>p");
-                    show.style.color="green"
-                    show.style.fon
-            show.innerText ="LOGIN SUCCESSFUL";
-            setTimeout(function(){
-                window.location.href = "/HTML/index.html"
-            },2000)
+        verification = userdata.forEach((ele,ind)=>{
+            if(number==ele.number){
+                    // console.log("num")
+                if(password==ele.password){
+                    // console.log("done")
+                    //intervel
+                    userKey[0]=("sr4d34")
+                    localStorage.setItem("userKey",JSON.stringify(userKey))
+                    let show1 = document.querySelector("#loginboxtop2>p");
+                    show1.style.color="green"
+                    show1.style.fontWeight = "700";
+                    show1.innerText ="LOGIN SUCCESSFUL";
+                    setTimeout(function(){
+                    window.location.href = "/HTML/index.html"
+                     },2000)
 
-            } else{
-                // console.log("pas")
-                let show = document.querySelector("#loginboxtop2>p");
-                    show.style.color="red"
-                    show.style.fontWeight="900"
-            show.innerText ="Invalid Password";
-           //intervel
-            setTimeout(function(){
-                window.location.href = "/HTML/login.html"
-            },1000)
+                } else {
+                    // console.log("pas")
+                    let show = document.querySelector("#loginboxtop2>p");
+                        show.style.color="red"
+                    show.innerText ="Invalid Password";
+                    //intervel
+                    setTimeout(function(){
+                        window.location.href = "/HTML/login.html"
+                    },2000)
 
-            }
-            } else if((password==ele.password)){
+                }
+            } else if((password==ele.password || number!==ele.number)) {
                 // console.log("pas2")
                 show = document.querySelector("#loginboxtop2>p");
                     show.style.color="red"
                 show.innerText ="Incorrect Username & Password";
+                setTimeout(function(){
+                    window.location.href = "/HTML/login.html"
+                },2000)
                 
             }
         })
@@ -55,9 +57,10 @@ let password = document.getElementById("password").value;
         //intervel
        setTimeout(function(){
         window.location.href = "/HTML/login.html"
-    },1000)
+    },2000)
     }
 })
+
 
 let redirectbutton = document.getElementById("redirect")
 redirectbutton.addEventListener("click",()=>{
