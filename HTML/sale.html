@@ -4,118 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autumn Winter 23</title>
+    <title>Buy Men Clothing,shoes & Accessories : Indian States</title>
     <link rel="shortcut icon" href="/logo/Screenshot 2023-01-16 215124.png" type="image/x-icon">
-    <style>
-    *{
-    /* border: 1px solid red; */
-    text-decoration: none;
-    font-family: 'Fira Sans', sans-serif;
-}
-body{
-    margin: 0px;
-padding: 0px;
-}
-    
-    .nav{
-    top: 0;
-    position: fixed;
-    background-color: white;
-}
-.navtop {
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: end;
-    font-size: 11px;
-    margin-top: 5px;
-}
-.navtop img{
-    width: 1%;
-}
-.navtop a {
-    margin-right: 30px;
-    margin-left: 5px;
-    color: gray;
-}
-.navtop a:hover {
-    text-decoration: underline;
-}
-.navtop span {
-    margin-left: 7px;
-}
-/* navitation bar button part  */
-
-.navButtom {
-    /* border: 2px solid red; */
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(1,70px);
-    font-size: 17px;
-    background-color: white;
-    position: sticky;
-}
-.nav #logo{
-    width: 50%;
-    padding-top: 10px;
-    margin-left: 40px;
-}
-.navButtom > div:nth-child(2){
-    /* border: 2px solid rgb(7, 10, 193); */
-    grid-area: 1/2/2/4;
-    display: flex;
-    align-items:center;
-    padding-top: 10px;
-    padding-bottom: 3px;
-}
-.navButtom > div:nth-child(2) a {
-    margin-left: 25px;
-    color: rgb(89, 87, 87);
-}
-#nav-sale {
-    color: red;
-}
-#navbar .navButtom > div:nth-child(2) a:hover {
-    color: rgb(255, 255, 255);
-    background-color: black;
-    padding: 8px;
-}
-.navButtom > div:nth-child(3){
-    /* border: 2px solid rgb(19, 232, 197); */
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding-right: 20px;
-}
-.nav .navButtom  img {
-    width: 6%;
-}
- .navButtom #search{
-    /* border: 1px solid rgb(42, 42, 38); */
-    width: 100px;
-    height: 23px;
-    display: block;
-    margin-right: 10px;
-}
-.notification{
-    background-color:rgb(196,11,11);
-    display: flex;
-    height: 35px;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    color: white;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-}
-.notification a {
-    background-color:rgb(196,11,11);
-    margin-left: 5px;
-    color: white;
-    font-weight: bold;
-    text-decoration: underline;
-    border: none;
-}
-    </style>
+    <link rel="stylesheet" href="/Css/sale.css">
 </head>
 <body>
     <div>
@@ -124,12 +15,12 @@ padding: 0px;
                 <a href="#">E-Gift Card</a>
                 <a href="#">Store Locator</a>
                 <a href="#">Track Order</a>
-                <a href="#">My AEO</a>
+                <a id="siginornot" href="/HTML/login.html">My AEO</a>
                 <img src="https://cdn-icons-png.flaticon.com/512/60/60993.png" alt="">
                 <a href="#">Favorites</a>
                 <img src="https://cdn-icons-png.flaticon.com/512/8/8109.png" alt="">
                 <span id="cart_items">0</span>
-                <a href="./cart.html">Items</a>
+                <a id="cart" href="./cart.html">Items</a>
             </div>
             <div id="navbar">
                 <div class="navButtom">
@@ -138,13 +29,13 @@ padding: 0px;
                     </div>
                     <div>
                         <a href="/HTML/men.html">Men</a>
-                        <a href="#">Women</a>
+                        <a href="/HTML/women.html">Women</a>
                         <a href="#">Jeans</a>
-                        <a id="nav-sale" href="#">Sale</a>
-                        <a href="#">Winter Wear</a>
+                        <a id="nav-sale" href="/HTML/sale.html">Sale</a>
+                        <a href="/HTML/winter.html">Winter Wear</a>
                     </div>
                     <div>
-                        <input id="search" type="text" placeholder="Search">
+                        <a href="/HTML/search.html"><input id="search" type="text" placeholder="Search"></a>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png" alt="">
                     </div>
                 </div>
@@ -154,7 +45,165 @@ padding: 0px;
                 </div>
             </div>
         </div>
-    </nav>
+     </nav>
+     <div>
+        <div id="container">
+     <!---------------- containerPart--------------- -->
+         <div class="containerPart1">
+            <span><a href="/HTML/index.html">Home </a><label for=""> / Sale</label></span>
+        </div>
+    <!--------------------- containerPart2 ------------------>
+        <div class="containerPart2">
+            
+            <div>
+                <h5>FILTER</h5>
+                    <div>   
+                        <span id="totalitems">0</span><span>Items</span>
+                    </div>
+            </div>
+            <div id="head"><h4>Sale's Wear</h4></div>
+            <div>
+                <div id="sort">
+                    <label id="sortby">SORT BY</label><br>
+                    <span>New Arrivals</span>
+                </div>
+                <select id="filter" aria-placeholder="Sort">
+                    <option value="popular">Popular</option>
+                    <option value="LTH">Price: lowest first</option>
+                    <option value="higest">Price: highest first</option>
+                    <option value="mostviewed">Most viewed</option>
+                    <option value="discount">Discount</option>
+                </select>
+             </div>
+            </div>
+            <div>
+                <div id="datappend">
+                        <div id="leftside">
+                            <div class="dropdown">
+                                <a class="drop">Category</a>
+                                <div class="dropdown-content">
+                                <img id="dropdownplus" src="/icons/1237946.png" alt=""></div>
+                            </div>
+                            <div>
+                                <a>Product Type</a>
+                                <div class="dropdown-content"><img src="/icons/1237946.png" alt=""></div>
+                            </div>
+                            <div>
+                                <a>Fit</a>
+                                <div  class="dropdown-content"><img src="/icons/1237946.png" alt=""></div>
+                            </div>
+                            <div>
+                                <a>Size</a>
+                                <div class="dropdown-content"><img src="/icons/1237946.png" alt=""></div>
+                            </div>
+                            <div> 
+                                <a>Color</a>
+                                <div class="dropdown-content"><img src="/icons/1237946.png" alt=""></div>
+                            </div>
+                            <div>
+                                <a>Price</a>
+                                <div class="dropdown-content"><img src="/icons/1237946.png" alt=""></div>
+                            </div>
+                            <div>
+                                <a>Discount</a>
+                                <div class="dropdown-content"><img src="/icons/1237946.png" alt=""></div>
+                            </div>
+                            <div>
+                                <a>Wash</a>
+                                <div class="dropdown-content"><img src="/icons/1237946.png" alt=""></div>
+                            </div>
+                            <div>
+                                <a>Pattern</a>
+                                <div class="dropdown-content"><img src="/icons/1237946.png" alt=""></div>
+                            </div>
+                            <div>
+                                <a>Sleeves</a>
+                                <div class="dropdown-content"><img src="/icons/1237946.png" alt=""></div>
+                            </div>
+                            <div>
+                                <a>Neck</a>
+                                <div class="dropdown-content"><img src="/icons/1237946.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div id="displayData">
+    <!------------ all data will display here ----------->
+                        </div>
+                </div>
+                <div id="showdata">
+
+                </div>
+            </div>
+            <div id="containerend1">
+                <a href="#">VIEW MORE</a>
+            </div>
+            <div>
+                <span>Indian States</span>
+            </div>
+         </div>
+      </div>
+      <div id="bottom">
+        <div id="bottomTop">
+            <div> 
+                <div><h5>Want 25% off your purchase? </h5></div>
+                <div><a>Refer A friend!</a></div>
+            </div>
+            <div>
+                <div><h5>A gift that always fits.</h5></div>
+                <div><a> Shop E-Gift Card</a></div>
+            </div>
+        </div>
+        <div id="bottomMid">
+            <div > 
+                <div>
+                        <img src="/icons/cards.png" alt="">
+                        <span>PAYMENT OPTIONS</span> <br>
+                        <p>Credit,Debit,Paytm Wallet & more.
+                        </p>
+                    
+                </div>
+                <div>
+                    <img src="/icons/location.png" alt="">
+                    <span>STORE LOCATOR</span>
+                </div>
+                <div>
+                    <img src="/icons/mail.png" alt="">
+                    <span>EMAIL SIGN UP</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="/icons/truck.png" alt="">
+                    <span>TRACK ORDER</span>
+                </div>
+                <div>
+                    <a> ABOUT AEO </a> <br>
+                       <a href="">RETURNS POLICY</a> <br>
+                       <a href="">CANCELLATION POLICY</a> <br>
+                        <a href="">SHIPPING POLICY</a> <br>
+                        <a href="">TERMS AND CONDITIONS OF USE</a> <br>
+                       <a href="">OFFER T&C</a> <br>
+                        <a href="">PRIVACY POLICY</a> <br>
+                       <a href=""> SITE MAP</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="/icons/question mark.png" alt="">
+                    <span>HAVE A QUESTION?</span> <br>
+                    <p href="#">CUSTOMER SUPPORT</p>
+                </div>
+                <div>
+                    <span id="facebook">FOLLOW US</span> <br>
+                    <img  src="/icons/facebook.png" alt="">
+                </div>
+            </div>
+        
+        </div>
+        <div id="bottomBottom">
+            <p>© 2021 AEO Management Co. All Rights Reserved.</p>
+        </div>
+    </div>
     </div>
 </body>
+<script src="/JavaScript/sale.js"></script>
 </html>

@@ -19,14 +19,19 @@ let password = document.getElementById("password").value;
                 //intervel
                 userKey[0]=("sr4d34")
                 localStorage.setItem("userKey",JSON.stringify(userKey))
+                let show = document.querySelector("#loginboxtop2>p");
+                    show.style.color="green"
+                    show.style.fon
+            show.innerText ="LOGIN SUCCESSFUL";
             setTimeout(function(){
                 window.location.href = "/HTML/index.html"
-            },1000)
+            },2000)
 
             } else{
                 // console.log("pas")
                 let show = document.querySelector("#loginboxtop2>p");
                     show.style.color="red"
+                    show.style.fontWeight="900"
             show.innerText ="Invalid Password";
            //intervel
             setTimeout(function(){

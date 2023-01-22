@@ -39,4 +39,55 @@ console.log(cartData)
 
 }
 
+let firstimg = document.getElementById("firstimg");
+
+firstimg.addEventListener("mouseover",()=>{
+  firstimg.src = "https://imagescdn.aeo.in/img/app/product/2/285571-1205991.jpg?w=291&auto=format"
+})
+firstimg.addEventListener("mouseleave",()=>{
+  console.log("h")
+  firstimg.src = "https://imagescdn.aeo.in/img/app/product/2/285571-1205992.jpg?auto=format"
+})
+
+let secondimg = document.getElementById("secondimg");
+
+
+secondimg.addEventListener("mouseover",()=>{
+  secondimg.src = "https://imagescdn.aeo.in/img/app/product/5/554767-4564167.jpg?w=291&auto=format"
+})
+secondimg.addEventListener("mouseleave",()=>{
+  secondimg.src = "https://imagescdn.aeo.in/img/app/product/5/554767-4564166.jpg?auto=format"
+})
+
+let thirdimg = document.getElementById("thirdimg");
+
+
+thirdimg.addEventListener("mouseover",()=>{
+  thirdimg.src = "https://imagescdn.aeo.in/img/app/product/3/316856-1469166.jpg?w=291&auto=format"
+})
+thirdimg.addEventListener("mouseleave",()=>{
+  thirdimg.src = "https://imagescdn.aeo.in/img/app/product/3/316856-1469167.jpg?auto=format"
+})
+
+let fourthimg = document.getElementById("fourthimg");
+
+
+fourthimg.addEventListener("mouseover",()=>{
+  fourthimg.src = "https://imagescdn.aeo.in/img/app/product/3/338416-1583299.jpg?w=291&auto=format"
+})
+fourthimg.addEventListener("mouseleave",()=>{
+  fourthimg.src = "https://imagescdn.aeo.in/img/app/product/3/338416-1583300.jpg?auto=format"
+})
+
+
+let fivthimg = document.getElementById("fivthimg");
+
+
+fivthimg.addEventListener("mouseover",()=>{
+  fivthimg.src = "https://imagescdn.aeo.in/img/app/product/5/548738-4452149.jpg?w=291&auto=format"
+})
+fivthimg.addEventListener("mouseleave",()=>{
+  fivthimg.src = "https://imagescdn.aeo.in/img/app/product/5/548738-4452148.jpg?auto=format"
+})
+
 

@@ -122,7 +122,7 @@ Totalvalue.innerText = totaldiscount;
          },2000)
          show = document.getElementById("error");
         show.style.color = "gray"
-        show.innerText = "Verifying Payment"
+        show.innerText = "Verifying Payment..."
     }else{
         show = document.getElementById("error");
         show.style.color = "red"

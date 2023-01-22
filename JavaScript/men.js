@@ -40,14 +40,31 @@ let api = ("/json/men.json")
     addtocart.src = "https://images.emojiterra.com/google/android-10/512px/2795.png"
     addtocart.setAttribute("class","plussign")
 
-      addtocart.addEventListener("click",()=>{
-        cartorder = data.filter((e,i)=>{
-          return i==ind
-        })
-        cart.push({...cartorder[0],number:1})
-        localStorage.setItem("cart",JSON.stringify(cart))
-        // console.log(cart)
-        let datashow = document.getElementById("siginornot");
+    addtocart.addEventListener("click",()=>{
+      // cartorder = data.filter((e,i)=>{
+      //   return i==ind
+      // })
+      let datashow = document.getElementById("siginornot");
+      
+      if(userKey[0] == "sr4d34") {
+        // is user is logined in or not
+        if(check(ele) ){
+          alert("Item Is Already Present In Cart")
+        }else{
+         cart.push({...ele,number:1})
+       localStorage.setItem("cart",JSON.stringify(cart))
+        }
+      } else{
+           // show error in nofify
+    datashow.innerText = "Login First";
+    datashow.style.color = "white"
+    datashow.setAttribute("href","/HTML/login.html")
+    datashow.style.backgroundColor = "red"
+    datashow.style.padding = "5px"
+      datashow.style.fontWeight="700"
+      }
+  
+         datashow = document.getElementById("siginornot");
         
 if(userKey[0] == "sr4d34") {
  span = document.createElement("a");
@@ -239,5 +256,12 @@ console.log(cartData)
 }
 
 
+function check(ele) {
+  for (let i=0; i<cartData.length; i++) {
+    if(ele.id==cartData[i].id){
+      return true;
+    }
+  } return false;
+}
 
 
