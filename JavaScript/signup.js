@@ -34,3 +34,8 @@
         show.innerText ="Please Enter Your Name, Mobile No. & Password";
       }
  })
+
+ let redirectbutton = document.getElementById("redirect")
+ redirectbutton.addEventListener("click",()=>{
+   window.location.href = "/HTML/login.html"
+ })

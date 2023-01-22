@@ -62,6 +62,19 @@ let api = ("/json/men.json")
     datashow.style.backgroundColor = "red"
     datashow.style.padding = "5px"
       datashow.style.fontWeight="700"
+
+        setTimeout(function(){
+          console.log("Hello")
+          
+          datashow.innerText = "My AEO";
+          datashow.style.color = "gray"
+          datashow.setAttribute("href","/HTML/login.html")
+          datashow.style.backgroundColor = "white"
+          datashow.style.padding = "0px"
+            datashow.style.fontWeight="300"
+            datashow.style.fontSize = "11px"
+        },2000)
+
       }
   
          datashow = document.getElementById("siginornot");
