@@ -22,7 +22,13 @@
          userdata.push(obj);
          localStorage.setItem("userData",JSON.stringify(userdata))
          localStorage.setItem("userKey",JSON.stringify(userKey))
-         window.location.href = "/HTML/login.html";
+         let show = document.querySelector("#loginboxtop2>p");
+        show.style.color="Green"
+        show.style.fontWeight="700"
+        show.innerText ="Sign Up Successful"
+         setTimeout(()=>{
+            window.location.href = "/HTML/login.html";
+         },2000)
         }else {
         let show = document.querySelector("#loginboxtop2>p");
         show.style.color="red"
