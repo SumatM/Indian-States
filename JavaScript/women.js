@@ -60,8 +60,6 @@ addtocart.setAttribute("class","plussign")
   datashow.style.backgroundColor = "red"
   datashow.style.padding = "5px"
     datashow.style.fontWeight="700"
-    }
-
 
     setTimeout(function(){
       console.log("Hello")
@@ -74,6 +72,10 @@ addtocart.setAttribute("class","plussign")
         datashow.style.fontWeight="300"
         datashow.style.fontSize = "11px"
     },2000)
+    }
+
+
+    
      
     
     // console.log(cart)

@@ -1,5 +1,5 @@
-
-let address = JSON.parse(localStorage.getItem("address")) || [];
+    let address = new Array(1)
+         address = JSON.parse(localStorage.getItem("address")) || [];
 
 let button = document.querySelector("button");
 //  console.log(button)
@@ -25,7 +25,7 @@ button.addEventListener("click",(e)=>{
     city:city,
     state:state,
  }
- address.push(obj);
+  address[0]=obj;
 localStorage.setItem("address",JSON.stringify(address))
     window.location.href = "/HTML/cart.html"
 

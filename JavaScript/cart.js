@@ -1,6 +1,7 @@
 cartData = JSON.parse(localStorage.getItem("cart")) || [];
 // console.log(cartData)
-
+let address = JSON.parse(localStorage.getItem("address")) || [];
+let userdata = JSON.parse(localStorage.getItem("userData")) || [];
 let userKey = JSON.parse(localStorage.getItem("userKey")) || [];
 
 let datashow = document.getElementById("siginornot");
@@ -127,18 +128,11 @@ Totalvalue.innerText = totaldiscount;
     
 
  })
-}
+ // displaying address in cart 
 
-} else{
-    show = document.getElementById("container");
-    show.innerHTML = null;
-}
-
-
-
-let address = JSON.parse(localStorage.getItem("address")) || [];
 shippingaddress =document.getElementById("shippingaddressappend")
 if(address[0].verify=="adfjd"){
+            // console.log("H")
             // console.log(address,"he")
             shippingaddress.innerHTML=null;
     address.forEach((ele,ind)=>{
@@ -158,6 +152,21 @@ if(address[0].verify=="adfjd"){
            shippingaddress.append(name,address1,mobile,text,button)
     })
 }
+
+
+}
+
+} else{
+    show = document.getElementById("container");
+    show.innerHTML = null;
+}
+
+ address = JSON.parse(localStorage.getItem("address")) || [];
+
+ userdata = JSON.parse(localStorage.getItem("userData")) || [];
+
+
+
 
 
   

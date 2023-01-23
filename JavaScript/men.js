@@ -106,7 +106,7 @@ console.log(cartData)
       let popularity = {
         id:ele.id,
         popular:popular,
-        gender:men,
+        gender:ele.gender,
       }
       mostview.push(popularity)
       localStorage.setItem("popular",JSON.stringify(mostview))
