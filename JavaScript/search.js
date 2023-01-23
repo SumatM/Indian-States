@@ -66,12 +66,7 @@ addtocart.src = "https://images.emojiterra.com/google/android-10/512px/2795.png"
 addtocart.setAttribute("class","plussign")
 
   addtocart.addEventListener("click",()=>{
-    // cartorder = data.filter((e,i)=>{
-    //   return i==ind
-    // })
-    // cart.push({...cartorder[0],number:1})
-    // localStorage.setItem("cart",JSON.stringify(cart))
-    // // console.log(cart)
+ 
 
     let datashow = document.getElementById("siginornot");
       
@@ -91,7 +86,6 @@ addtocart.setAttribute("class","plussign")
   datashow.style.backgroundColor = "red"
   datashow.style.padding = "5px"
     datashow.style.fontWeight="700"
-    }
 
     setTimeout(function(){
       console.log("Hello")
@@ -104,6 +98,10 @@ addtocart.setAttribute("class","plussign")
         datashow.style.fontWeight="300"
         datashow.style.fontSize = "11px"
     },2000)
+
+    }
+
+    
 
 
      datashow = document.getElementById("siginornot");
