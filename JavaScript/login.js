@@ -24,7 +24,7 @@ let password = document.getElementById("password").value;
                     show1.style.fontWeight = "700";
                     show1.innerText ="LOGIN SUCCESSFUL";
                     setTimeout(function(){
-                    window.location.href = "/HTML/index.html"
+                    window.location.href = "./../index.html"
                      },2000)
 
                 } else {

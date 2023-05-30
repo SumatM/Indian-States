@@ -7,9 +7,13 @@
 body{
     background-color: rgb(211, 211, 211);
 }
+#conatiner{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
 #displaybox{
-    width: 40%;
-    margin: auto;
     background-color: rgb(234, 234, 234);
     height: 350px;
     text-align: center;

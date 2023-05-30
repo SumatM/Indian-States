@@ -305,20 +305,21 @@
             #datappend  {
                 /* border: 2px solid black; */
                 display: grid;
-                grid-template-columns: repeat(4,1fr);
+                grid-template-columns: repeat(3,1fr);
                 gap: 20px 20px;
                 color: rgb(57, 55, 55);
                 font-size: 14px;
-                margin-left: 5px;
-                margin-right: 5px;
+    
+            }
+            #datappend>div:nth-child(1){
+                grid-area: 1/1/2/2;
+                width: 90%;
             }
             #displayData {
+                grid-area: 1/2/2/4;
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
                 gap: 20px 20px;
-                width: 105%;
-                height: 500px;
-                margin-left: 100px;
             }
     
     /*----------------- bottum part ------------ */
@@ -404,3 +405,133 @@
         margin-left: 14px;
         }
         
+
+        
+    /* medium screens */
+    /* #datappend  {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px 20px;
+        color: rgb(57, 55, 55);
+        font-size: 14px;
+
+    }
+    #datappend>div:nth-child(1){
+        grid-area: 1/1/2/2;
+        width: 90%;
+    }
+    #displayData {
+        grid-area: 1/2/2/4;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px 20px;
+    } */
+
+@media screen and (max-width:780px){
+
+    #bottomTop{
+        flex-direction: column;
+    }
+    #bottomTop>div:nth-child(2){
+        margin-top: 10px;
+    }
+    #cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+    #bottomMid   {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border-bottom: 1px solid gray;
+        /* margin-bottom: 40px; */
+        padding-bottom: 25px;
+        
+        }
+
+    #bottomMid>div:nth-child(3){
+        display: none;
+    }
+    
+
+    .navtop >img{
+        display: none;
+    }
+
+    .navButtom{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navButtom>div:nth-child(2){      
+        display: none;
+    }
+    .navtop{
+        display: none;
+    }
+
+    #leftside{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #showdata{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+
+    #displayData {
+        grid-area: 1/1/2/4;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px 20px;
+        margin-left: 0;
+    }
+
+    #displayData > div:nth-child(3) {
+        display: none;
+
+    }
+    #head > h4{
+        display: none;
+    }
+}
+
+
+/* small screen  */
+
+
+@media screen and (max-width:480px){
+    #cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #cards>div:nth-child(5){
+        display: none;
+    }
+    #bottomMid   {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        
+        }
+    #bottomMid>div{
+        border-top: 1px solid black;
+    }
+
+        #bottomMid>div:nth-child(3){
+            display: block;
+        }
+        #showdata{
+            grid-template-columns: repeat(1,1fr);
+            width: 100%;
+        }
+    
+        #displayData {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px 20px;
+            margin-left: 0;
+        }
+}

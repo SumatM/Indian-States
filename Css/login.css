@@ -13,13 +13,16 @@ body{
     width: 15px;
 }
 
+#container{
+    display: flex;
+    justify-content: center;
+}
+
 
 #loginbox{
     /* border: 2px solid red; */
-    width: 30%;
-    margin: auto;
+    width: 35%;
     margin-top: 10px;
-    bottom: 50%;
     padding: 20px;
     padding-top: 25px;
     padding-bottom: 45px;
@@ -94,4 +97,17 @@ padding-left: 30px;
 #otherloginmethode >div:nth-child(2) #google  {
     color: rgb(88, 86, 86);
     
+}
+
+
+@media  screen and (max-width:880px) {
+    #loginbox{
+        width: 60%;
+    }
+}
+
+@media  screen and (max-width:480px) {
+    #loginbox{
+        width: 80%;
+    }
 }
