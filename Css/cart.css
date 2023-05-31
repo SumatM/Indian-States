@@ -391,6 +391,16 @@
         #cartitemshow{
             grid-template-columns: repeat(2,1fr);
         }
+
+        
+    }
+
+    .delete{
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        padding: 5px;
+        margin-top: 20px;
     }
 
 

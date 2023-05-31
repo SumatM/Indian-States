@@ -7,13 +7,12 @@ try{
 let data =  await request.json();
 // console.log(data);
 appData[0]=data;
-append(data);
+display(data);
 }
 catch(error){
     console.log(error)
 }
 }
-console.log(appData)
 fetchdata()
 
 searchlense = document.getElementById("searchlense")
@@ -52,7 +51,7 @@ let divDisplay = document.getElementById("displayData")
 let datappend = document.getElementById("showdata");
 
 
-function append(data) {
+function display(data) {
 divDisplay.innerHTML = null;
 datappend.innerHTML = null;
 data.forEach((ele,ind) =>{
@@ -61,9 +60,8 @@ card.setAttribute("class","card")
 let img = document.createElement("img");
 img.src = ele.img;
 img.setAttribute("class","change")
-addtocart = document.createElement("img")
-addtocart.src = "https://images.emojiterra.com/google/android-10/512px/2795.png"
-addtocart.setAttribute("class","plussign")
+addtocart = document.createElement("button")
+addtocart.textContent='Add To Cart'
 
   addtocart.addEventListener("click",()=>{
  
@@ -77,6 +75,7 @@ addtocart.setAttribute("class","plussign")
       }else{
        cart.push({...ele,number:1})
      localStorage.setItem("cart",JSON.stringify(cart))
+     alert("Item Is Added To Cart")
       }
     } else{
          // show error in nofify
@@ -86,10 +85,10 @@ addtocart.setAttribute("class","plussign")
   datashow.style.backgroundColor = "red"
   datashow.style.padding = "5px"
     datashow.style.fontWeight="700"
+    alert('Please Login to Enjoy the Shopping')
+
 
     setTimeout(function(){
-      console.log("Hello")
-      
       datashow.innerText = "My AEO";
       datashow.style.color = "gray"
       datashow.setAttribute("href","/HTML/login.html")
@@ -133,7 +132,6 @@ img.addEventListener("click",()=>{
   let popularity = {
     id:ele.id,
     popular:popular,
-    gender:men,
   }
   mostview.push(popularity)
   localStorage.setItem("popular",JSON.stringify(mostview))
@@ -295,3 +293,11 @@ totalitems.innerText = cartData.length;
 }
 }
 
+
+function check(ele) {
+  for (let i=0; i<cartData.length; i++) {
+    if(ele.id==cartData[i].id){
+      return true;
+    }
+  } return false;
+}

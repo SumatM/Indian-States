@@ -6,29 +6,33 @@ body{
     background-color: gray;
 }
   #container{
-    /* border: 2px solid red; */
-    width: 30%;
-    margin: auto;
-    padding: 20px;
-    padding-top: 0px;
-    margin-top: 50px;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
   }
 
+  #container>div{
+    background-color: white;
+    width: 40%;
+    padding: 15px;
+  }
+  
   #boxtop{
-    /* border: 2px solid blue; */
-     display: flex;
-   justify-content: space-around;
-    margin-top: -18px;
+    display: flex;
+    justify-content: space-between;
   }
+
   #boxtop img{
-    /* border: 2px solid red; */
-    width: 6%;
-    height: 15%;
-    display: block;
-    margin-top: 20px;
-    margin-left: 200px;
+    height: 15px;
   }
+  #crosslogo{
+    display: flex;
+    width: 45%;
+    justify-content: end;
+    padding: 15px;
+  }
+
+
   
   input[type=text]{
     height: 45px;
@@ -91,13 +95,7 @@ body{
     align-items: center;
     font-size: 18px;
   }
-  button{
-    height: 45px;
-    background-color: black;
-    color: white;
-    margin: 15px;
-    margin-left: 150px;
-  }
+
   #addrestype{
     display: flex;
     justify-content: space-around;
@@ -118,7 +116,50 @@ body{
     padding-left: 9px;
     font-weight: 400;
 }
-#crosslogo{
-  /* border: 2px solid red; */
-  margin-left: 120px;
+
+#save{
+  display: flex;
+  justify-content: center;
+  
+}
+
+button{
+  height: 45px;
+  background-color: black;
+  color: white;
+  margin: 15px;
+}
+
+
+
+@media  screen and (max-width:1080px) {
+  #container>div{
+    width: 60%;
+
+  }
+}
+
+@media  screen and (max-width:780px) {
+  #container>div{
+    width: 80%;
+
+  }
+
+  #name{
+    width: 95%;
+  }
+  #lastname{
+    width: 95%;
+  }
+  #city{
+    width: 95%;
+  }
+  #state{
+    width: 95%;
+  }
+
+  #addrestype{
+    display: flex;
+    flex-direction: column;
+  }
 }

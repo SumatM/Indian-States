@@ -36,9 +36,8 @@ card.setAttribute("class","card")
 let img = document.createElement("img");
 img.src = ele.img;
 img.setAttribute("class","change")
-addtocart = document.createElement("img")
-addtocart.src = "https://images.emojiterra.com/google/android-10/512px/2795.png"
-addtocart.setAttribute("class","plussign")
+addtocart = document.createElement('button')
+addtocart.innerText='Add To Cart'
 
   addtocart.addEventListener("click",()=>{
     // cartorder = data.filter((e,i)=>{
@@ -55,6 +54,7 @@ addtocart.setAttribute("class","plussign")
       }else{
        cart.push({...ele,number:1})
      localStorage.setItem("cart",JSON.stringify(cart))
+     alert("Item Is Added To Cart")
       }
     } else{
          // show error in nofify
@@ -64,10 +64,10 @@ addtocart.setAttribute("class","plussign")
   datashow.style.backgroundColor = "red"
   datashow.style.padding = "5px"
     datashow.style.fontWeight="700"
+   alert('Please Login to Enjoy the Shopping')
 
     setTimeout(function(){
-      console.log("Hello")
-      
+    
       datashow.innerText = "My AEO";
       datashow.style.color = "gray"
       datashow.setAttribute("href","/HTML/login.html")

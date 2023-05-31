@@ -54,13 +54,16 @@ if(userKey[0] == "sr4d34") {
         dec_button.addEventListener("click",()=>{
             ele.number--;
             if(ele.number==0){
-              data.splice(ind,1)
-            //   console.log(data);
+            alert('Your item is Successful Removed')
+            data.splice(ind,1)
             append(data)
             }
             localStorage.setItem("cart",JSON.stringify(cartData))
             // console.log(cartData)
             append(cartData)
+            if(ele.number==1){
+            alert(`You only have One item of ${ele.name}`)
+              }
         })
         dec_button.setAttribute("class","size")
     let quantiy = document.createElement("span");
@@ -70,7 +73,17 @@ if(userKey[0] == "sr4d34") {
             div3.append(addbutton,quantiy,dec_button)
         div1.append(img)
         div1.append(title,price,discount,span,p,div3)
-    card.append(div1,div2,div3)
+    let div4 = document.createElement('div')
+    let deleteButton = document.createElement('button')
+        deleteButton.addEventListener('click',()=>{
+            alert('Your item is Successful deteted')
+            data.splice(ind,1)
+            append(data)
+        })
+        deleteButton.textContent='Delete'
+        deleteButton.setAttribute('class','delete')
+    div4.append(deleteButton)
+    card.append(div1,div2,div3,div4)
     cartitemshow.append(card)
   })
   totalprice = 0;

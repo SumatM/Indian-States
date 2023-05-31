@@ -32,15 +32,13 @@ divDisplay.innerHTML = null;
 datappend.innerHTML = null;
 data.forEach((ele,ind) =>{
 let card = document.createElement("div");
+let button = document.createElement('button');
 card.setAttribute("class","card")
 let img = document.createElement("img");
 img.setAttribute("class","change")
 img.src = ele.img;
-addtocart = document.createElement("img")
-addtocart.src = "https://images.emojiterra.com/google/android-10/512px/2795.png"
-addtocart.setAttribute("class","plussign")
  // add to card function 
-  addtocart.addEventListener("click",()=>{
+  button.addEventListener("click",()=>{
     // cartorder = data.filter((e,i)=>{
     //   return i==ind
     // })
@@ -51,6 +49,7 @@ addtocart.setAttribute("class","plussign")
       }else{
        cart.push({...ele,number:1})
      localStorage.setItem("cart",JSON.stringify(cart))
+     alert("Item Is Added To Cart")
       }
     } else{
          // show error in nofify
@@ -60,6 +59,8 @@ addtocart.setAttribute("class","plussign")
   datashow.style.backgroundColor = "red"
   datashow.style.padding = "5px"
     datashow.style.fontWeight="700"
+    alert('Please Login to Enjoy the Shopping')
+
 
     setTimeout(function(){
       console.log("Hello")
@@ -134,7 +135,8 @@ let discount = document.createElement("span");
 discount.textContent=  "₹ "+ele.discount;
 pricediv.append(price,discount)
 discount.setAttribute("class","red")
-card.append(img,addtocart ,name,pricediv);
+    button.innerText='Add to Cart'
+card.append(img,name,pricediv,button);
 if(ind<3) {
   divDisplay.append(card);
 } else {
