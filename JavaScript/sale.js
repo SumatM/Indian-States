@@ -68,7 +68,7 @@ addtocart.innerText='Add To Cart'
 
     setTimeout(function(){
     
-      datashow.innerText = "My AEO";
+      datashow.innerText = "LogIn";
       datashow.style.color = "gray"
       datashow.setAttribute("href","/HTML/login.html")
       datashow.style.backgroundColor = "white"

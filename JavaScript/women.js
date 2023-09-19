@@ -65,7 +65,7 @@ img.src = ele.img;
     setTimeout(function(){
       console.log("Hello")
       
-      datashow.innerText = "My AEO";
+      datashow.innerText = "LogIn";
       datashow.style.color = "gray"
       datashow.setAttribute("href","/HTML/login.html")
       datashow.style.backgroundColor = "white"

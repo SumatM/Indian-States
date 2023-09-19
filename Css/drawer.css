@@ -29,16 +29,16 @@
     #drawer-container{
         display: block;
         position :absolute;
+        width: 50%;
         top: 15px;
         left: 5px; 
     }
 
     #drawer-container img{
-        width: 5%;
+        width: 15%;
     }
     #drawer{
         padding: 5px 15px;
-        width: 50%;
         background-color: white;
        
     }

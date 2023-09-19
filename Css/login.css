@@ -2,7 +2,7 @@
     font-family: sans-serif;
 }
 body{
-    background-color: rgb(212, 212, 212);
+    background-color: rgba(123, 122, 122, 0.664);
 }
 #backtopage{
     /* background-color: red; */
@@ -97,6 +97,10 @@ padding-left: 30px;
 #otherloginmethode >div:nth-child(2) #google  {
     color: rgb(88, 86, 86);
     
+}
+
+.anchorSignup{
+    text-decoration: none;
 }
 
 
